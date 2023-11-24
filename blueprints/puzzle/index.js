@@ -37,7 +37,7 @@ module.exports = {
       `    <LinkTo @route="puzzles.${options.entity.name}">Day ${options.entity.name}</LinkTo>`,
       {
         after: `Day ${options.entity.name - 1}</LinkTo>\n`,
-      }
+      },
     );
     updateRouter.call(this, 'add', options);
   },
