@@ -1,7 +1,6 @@
 # advent-of-code-2023
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Welcome to our amazing Advent of Code app. We (MinThamie & LiuLangZhe (sis & bro)) will try to solve as many of the 2023 Advent of Code puzzles as possible. In previous years we used to do this seperately, but this year we want to bundle our efforts, so we've updated MinThaMie's UI to house both our inputs! Each day will show a silver or gold medal, depending on wheter we got 1 or two stars!
 
 ## Prerequisites
 
@@ -10,7 +9,6 @@ You will need the following things properly installed on your computer.
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with npm)
 * [Ember CLI](https://cli.emberjs.com/release/)
-* [Google Chrome](https://google.com/chrome/)
 
 ## Installation
 
@@ -20,37 +18,9 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
-* `ember serve`
+* `npm start`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Linting
-
-* `npm run lint`
-* `npm run lint:fix`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
 
 ### Deploying
 
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://cli.emberjs.com/release/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+Just push to `main` and Netlify will do the rest :) 
