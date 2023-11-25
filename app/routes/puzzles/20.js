@@ -8,11 +8,14 @@ export default class Puzzles20Route extends Route {
   async model() {
     const resIntro = await fetch('/inputs/day20/intro.txt');
     const introFile = await resIntro.text();
-    const res = await fetch('/inputs/day20/full.txt');
-    const fullFile = await res.text();
+    const resMinThamie = await fetch('/inputs/day20/full-minthamie.txt');
+    const resLiuLangZhe = await fetch('/inputs/day20/full-liulangzhe.txt');
+    const fullMinThamieFile = await resMinThamie.text();
+    const fullLiuLangzheFile = await resLiuLangZhe.text();
     return {
       example: this.parseInput(introFile),
-      full: this.parseInput(fullFile),
+      fullMinThaMie: this.parseInput(fullMinThamieFile),
+      fullLiuLangzhe: this.parseInput(fullLiuLangzheFile),
     };
   }
 }

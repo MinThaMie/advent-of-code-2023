@@ -5,12 +5,12 @@ export default class PuzzlesBaseController extends Controller {
     return this.solve1(this.model.example);
   }
   get solution1() {
-    return this.solve1(this.model.full);
+    return `MinThaMie's solution: ${this.solve1(this.model.fullMinThaMie)} <br><br> LiuLangZhe's solution: ${this.solve1(this.model.fullLiuLangzhe)}`;;
   }
   get example2() {
     return this.solve2(this.model.example);
   }
   get solution2() {
-    return this.solve2(this.model.full);
+    return `MinThaMie's solution: ${this.solve2(this.model.fullMinThaMie)} <br><br> LiuLangZhe's solution: ${this.solve2(this.model.fullLiuLangzhe)}`;
   }
 }
