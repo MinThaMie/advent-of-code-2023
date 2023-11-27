@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 import PuzzlesBaseController from './base';
 
 export default class Puzzles1Controller extends PuzzlesBaseController {

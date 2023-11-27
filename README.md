@@ -2,6 +2,8 @@
 
 Welcome to our amazing Advent of Code app. We (MinThamie & LiuLangZhe (sis & bro)) will try to solve as many of the 2023 Advent of Code puzzles as possible. In previous years we used to do this seperately, but this year we want to bundle our efforts, so we've updated MinThaMie's UI to house both our inputs! Each day will show a silver or gold medal, depending on wheter we got 1 or two stars!
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5ec72945-2653-447b-9a0a-1b8cf3ac89b3/deploy-status)](https://app.netlify.com/sites/advent-of-code-2023/deploys)
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.

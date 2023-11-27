@@ -1,3 +1,4 @@
+/* eslint-disable n/no-extraneous-require */
 'use strict';
 
 const fs = require('fs');
