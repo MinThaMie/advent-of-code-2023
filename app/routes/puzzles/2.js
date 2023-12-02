@@ -2,7 +2,7 @@ import Route from '@ember/routing/route';
 
 export default class Puzzles2Route extends Route {
   parseInput(file) {
-    return file.split('\n');
+    return file.split('\n').map((e) => e.match(/(\d+) (?:red|green|blue)/g));
   }
 
   async model() {
