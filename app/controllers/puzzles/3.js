@@ -36,7 +36,11 @@ export default class Puzzles3Controller extends PuzzlesBaseController {
     for (const [rowIndex, numObj] of Object.entries(numbers)) {
       if (Object.keys(numObj)) {
         for (const [index, [number, length]] of Object.entries(numObj)) {
-          let bounding = this.getBoundingBox(parseInt(rowIndex), parseInt(index), parseInt(length));
+          let bounding = this.getBoundingBox(
+            parseInt(rowIndex),
+            parseInt(index),
+            parseInt(length),
+          );
           for (let coor of bounding) {
             if (symbols[coor[0]]?.[coor[1]]) {
               partNumbers.push(number);
@@ -67,7 +71,7 @@ export default class Puzzles3Controller extends PuzzlesBaseController {
         if (number) {
           numbers[rowIndex][startIndex] = [number, result[0].length];
         } else {
-          if(result[0] == '*'){
+          if (result[0] == '*') {
             gears[rowIndex][startIndex] = [];
           }
         }
@@ -76,7 +80,11 @@ export default class Puzzles3Controller extends PuzzlesBaseController {
     for (const [rowIndex, numObj] of Object.entries(numbers)) {
       if (Object.keys(numObj)) {
         for (const [index, [number, length]] of Object.entries(numObj)) {
-          let bounding = this.getBoundingBox(parseInt(rowIndex), parseInt(index), parseInt(length));
+          let bounding = this.getBoundingBox(
+            parseInt(rowIndex),
+            parseInt(index),
+            parseInt(length),
+          );
           for (let coor of bounding) {
             if (gears[coor[0]]?.[coor[1]]) {
               gears[coor[0]][coor[1]].push(number);
