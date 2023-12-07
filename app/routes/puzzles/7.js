@@ -2,7 +2,14 @@ import Route from '@ember/routing/route';
 
 export default class Puzzles7Route extends Route {
   parseInput(file) {
-    return file.split('\n');
+    let cardMap = {};
+    let cards = [];
+    file.split('\n').map((line) => {
+      let [card, bid] = line.split(' ');
+      cardMap[card] = parseInt(bid);
+      cards.push(card);
+    });
+    return [cardMap, cards];
   }
 
   async model() {
