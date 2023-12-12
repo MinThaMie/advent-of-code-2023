@@ -2,7 +2,24 @@ import Route from '@ember/routing/route';
 
 export default class Puzzles10Route extends Route {
   parseInput(file) {
-    return file.split('\n');
+    let coordinates = {};
+    let starting = '';
+    let maxY = 0;
+    let maxX = 0;
+    file.split('\n').map((line, y) => {
+      let tiles = line.split('');
+      maxX = tiles.length - 1;
+      tiles.forEach((tile, x) => {
+        if (tile !== '.') {
+          coordinates[`${x}.${y}`] = tile;
+        }
+        if (tile == 'S') {
+          starting = `${x}.${y}`;
+        }
+      });
+      maxY = y;
+    });
+    return [starting, coordinates, maxX, maxY];
   }
 
   async model() {

@@ -2,7 +2,18 @@ import Route from '@ember/routing/route';
 
 export default class Puzzles8Route extends Route {
   parseInput(file) {
-    return file.split('\n');
+    let [inst, network] = file.split('\n\n');
+    let procNetwork = {};
+    let endInA = [];
+    network.split('\n').map((line) => {
+      let [node, left, right] = line.match(/[A-Z]{3}/g);
+      if (node.slice(-1) == 'A') {
+        endInA.push(node);
+      }
+      procNetwork[node] = [left, right];
+    });
+
+    return [inst, procNetwork, endInA];
   }
 
   async model() {

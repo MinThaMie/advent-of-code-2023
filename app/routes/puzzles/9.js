@@ -2,7 +2,9 @@ import Route from '@ember/routing/route';
 
 export default class Puzzles9Route extends Route {
   parseInput(file) {
-    return file.split('\n');
+    return file
+      .split('\n')
+      .map((line) => line.split(' ').map((n) => parseInt(n)));
   }
 
   async model() {
