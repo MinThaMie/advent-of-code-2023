@@ -9,9 +9,7 @@ export default class PuzzlesBaseController extends Controller {
     return htmlSafe(
       `<ul><li>MinThaMie's solution: ${this.solve1(
         this.model.fullMinThaMie,
-      )}</li><li>LiuLangZhe's solution: ${this.solve1(
-        this.model.fullLiuLangzhe,
-      )}</li></ul>`,
+      )}</li><li>LiuLangZhe's solution: </li></ul>`,
     );
   }
   get example2() {
@@ -21,9 +19,7 @@ export default class PuzzlesBaseController extends Controller {
     return htmlSafe(
       `<ul><li>MinThaMie's solution: ${this.solve2(
         this.model.fullMinThaMie,
-      )}</li><li>LiuLangZhe's solution: ${this.solve2(
-        this.model.fullLiuLangzhe,
-      )}</li></ul>`,
+      )}</li><li>LiuLangZhe's solution: </li></ul>`,
     );
   }
 }
